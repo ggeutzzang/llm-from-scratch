@@ -174,3 +174,42 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# ============================================================================
+# LLM From Scratch 프로젝트 특화 항목
+# ============================================================================
+
+# 모델 가중치 파일 (훈련 중 생성될 수 있음)
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.h5
+*.pb
+model.pth
+model_weights/
+trained_model/
+checkpoints/
+
+# 훈련 결과 및 출력
+outputs/
+results/
+
+# 대용량 데이터셋 (로컬에서 생성된 경우)
+data/
+datasets/
+*.csv
+*.jsonl
+
+# GPU/CUDA 관련 캐시
+cuda_cache/
+torch_extensions/
+
+# 성능 분석 및 로깅
+logs/
+*.prof
+profiling_results/
+runs/          # TensorBoard 로그
+wandb/         # Weights & Biases 로그
+debug_output/
+temp/
