@@ -329,14 +329,13 @@ def visualize_attention_flow():
     """)
 
 
-def compare_heads(attn_weights):
+def compare_heads():
     """
     두 헤드가 어떻게 다르게 집중하는지 비교
-
-    Args:
-        attn_weights: 이미 계산된 어텐션 가중치
     """
     print_section("🧠 헤드 간 집중 패턴 비교")
+
+    output, attn_weights, attn_scores = simple_multihead_attention()
 
     print("\n" + "=" * 80)
     print("헤드 0 vs 헤드 1의 어텐션 가중치")
@@ -367,8 +366,8 @@ if __name__ == "__main__":
     # 흐름 시각화
     visualize_attention_flow()
 
-    # 헤드 비교 (이미 계산된 attn_weights 전달)
-    compare_heads(attn_weights)
+    # 헤드 비교
+    compare_heads()
 
     print("\n" + "=" * 80)
     print("✅ 완료! 모든 단계를 이해했습니다!")
