@@ -438,13 +438,43 @@ python -c "import torch; print(torch.__version__)"
 
 **Obsidian 볼트 위치:** `/home/iamhjoo/Documents/IAMHJOO`
 
+**이 책 관련 노트 저장 경로:** `/home/iamhjoo/Documents/IAMHJOO/books/밑바닥부터-만드는-LLM/`
+
 학습 중 중요한 개념이나 코드 차이점을 Obsidian에 기록할 때:
 
+- **저장 위치**: 모든 "밑바닥부터 만드는 LLM" 관련 노트는 `books/밑바닥부터-만드는-LLM/` 하위에 생성
 - 마크다운 형식으로 노트 생성
-- 태그 활용 (`#python`, `#llm-scratch`, `#coding-tip` 등)
-- 날짜 및 관련 챕터 링크 포함
+- 태그 활용 (`#llm-scratch`, `#python`, `#pytorch`, `#coding-tip` 등)
+- 날짜 및 관련 챕터 정보 포함 (예: `**작성일**: 2025-10-26`, `**출처**: Chapter 05`)
 - 코드 예시와 설명을 함께 작성
-- 카테고리 잘 분류해서, 노트 저장 
+- 관련 노트 링크 연결 (예: `[[Cross-Entropy Loss]]`, `[[Perplexity]]`)
+- 카테고리 잘 분류해서 노트 저장
+
+### 노트 작성 템플릿
+
+```markdown
+# [개념 이름]
+
+**작성일**: YYYY-MM-DD
+**출처**: 밑바닥부터 만드는 LLM - Chapter XX
+**태그**: #llm-scratch #개념태그
+
+---
+
+## 개요
+[간단한 설명]
+
+## 상세 설명
+[본문 내용]
+
+## 코드 예시
+[실제 코드]
+
+## 관련 링크
+- [[관련 노트1]]
+- [[관련 노트2]]
+- 코드: [파일명](file://경로)
+``` 
 ---
 
 ## 참고사항
