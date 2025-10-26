@@ -203,6 +203,12 @@ datasets/
 *.csv
 *.jsonl
 *.txt
+*.tsv
+*.zip
+
+# CH06 SMS 스팸 데이터셋
+ch06/01_main-chapter-code/sms_spam_collection/
+ch06/01_main-chapter-code/sms_spam_collection.zip
 
 # 다운로드된 사전 훈련 모델 (OpenAI GPT-2 등)
 gpt2/
