@@ -194,12 +194,21 @@ checkpoints/
 # 훈련 결과 및 출력
 outputs/
 results/
+*-plot.pdf
+*.pdf
 
 # 대용량 데이터셋 (로컬에서 생성된 경우)
 data/
 datasets/
 *.csv
 *.jsonl
+*.txt
+
+# 다운로드된 사전 훈련 모델 (OpenAI GPT-2 등)
+gpt2/
+**/gpt2/
+llama*/
+**/llama*/
 
 # GPU/CUDA 관련 캐시
 cuda_cache/
